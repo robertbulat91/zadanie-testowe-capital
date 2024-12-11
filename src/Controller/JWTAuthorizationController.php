@@ -18,4 +18,9 @@ class JWTAuthorizationController extends AbstractController
 
     }
 
+    #[Route('/api/login_check', name: 'api_login_check', methods: 'POST')]
+    public function apiLoginCheck(Request $request, EntityManagerInterface $entityManager, InstallmentsScheduleValidator $installmentsScheduleValidator): JsonResponse
+    {
+
+    }
 }
